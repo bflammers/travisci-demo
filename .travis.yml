@@ -1,15 +1,15 @@
 language: python
 
 python:
-  - "3.6"
+- "3.6"
 
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 
 script:
-  - python -m unittest discover
-  - coverage erase
-  - coverage run -m pytest && coverage html
+- python -m unittest discover
+- coverage erase
+- coverage run -m pytest && coverage html
 
 after_success:
-  - codecov
+- codecov
